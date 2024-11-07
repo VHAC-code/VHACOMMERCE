@@ -12,7 +12,7 @@ const errorMiddleware = require("./middleware/error");
 //new
 // CORS configuration to allow specific frontend domain
 const corsOptions = {
-  origin: "https://vhacommerce-1.onrender.com", // Your frontend URL (change it if needed)
+  origin: "*", // Your frontend URL (change it if needed)
   methods: ["GET", "POST", "PUT", "DELETE"], // Allowed methods
   credentials: true, // Allows cookies and credentials to be sent with requests
 };
