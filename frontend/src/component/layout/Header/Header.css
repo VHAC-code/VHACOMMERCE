@@ -1,0 +1,276 @@
+/* .speedDial {
+  position: fixed;
+  right: 3vmax;
+  top: 3vmax;
+}
+
+.speedDialIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  width: 100%;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.icon-link {
+  text-decoration: none;
+  color: rgba(35, 35, 35, 0.8);
+  transition: color 0.3s;
+}
+
+.icon-link:hover {
+  color: #eb4034;
+}
+
+.icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #eb4034;
+}
+
+.react-navbar {
+  height: 80px;
+}
+
+.react-navbar .burger {
+  width: 35px;
+  height: 30px;
+}
+
+@media (max-width: 1024px) {
+  .header-container {
+    padding: 10px 15px;
+  }
+
+  .icon-container {
+    gap: 10px;
+  }
+
+  .icon {
+    font-size: 1.3rem;
+  }
+
+  .react-navbar {
+    height: 70px;
+  }
+
+  .react-navbar .burger {
+    width: 30px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 10px;
+  }
+
+  .icon-container {
+    gap: 8px;
+  }
+
+  .icon {
+    font-size: 1.2rem;
+  }
+
+  .react-navbar {
+    height: 60px;
+  }
+
+  .react-navbar .burger {
+    width: 28px;
+    height: 23px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    padding: 5px 10px;
+  }
+
+  .icon-container {
+    gap: 5px;
+  }
+
+  .icon {
+    font-size: 1.1rem;
+  }
+
+  .react-navbar {
+    height: 50px;
+  }
+
+  .react-navbar .burger {
+    width: 25px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .header-container {
+    padding: 5px;
+  }
+
+  .icon-container {
+    gap: 3px;
+  }
+
+  .icon {
+    font-size: 1rem;
+  }
+
+  .react-navbar {
+    height: 45px;
+  }
+
+  .react-navbar .burger {
+    width: 22px;
+    height: 18px;
+  }
+} */
+
+/* 2nd */
+
+.speedDial {
+  position: fixed;
+  right: 3vmax;
+  top: 3vmax;
+}
+
+.speedDialIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+}
+
+.main_box {
+  display: flex;
+}
+
+#check {
+  display: none;
+}
+
+.sidebar_menu {
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  background-color: #333;
+  color: white;
+  height: 100%;
+  transition: all 0.3s ease;
+  z-index: 999; /* Sidebar should not block hamburger */
+}
+
+.sidebar_menu.open {
+  left: 0;
+  z-index: 999;
+}
+
+.btn_one {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 25px;
+  cursor: pointer;
+  /* z-index: 1000; Ensure it’s above everything else */
+  color: red;
+}
+
+.btn_two {
+  position: absolute;
+  top: 20px;
+  right: 6px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.logo {
+  padding: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.logo a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu {
+  padding-top: 40px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  padding: 15px;
+  border-bottom: 1px solid #555;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.menu li:hover {
+  background-color: #444;
+}
+
+.menu li a:hover {
+  color: #eb4034;
+}
+
+.social_media {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.social_media ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.social_media li {
+  margin-right: 10px;
+}
+
+.social_media a {
+  color: white;
+  font-size: 25px;
+}
+
+.social_media a:hover {
+  color: #eb4034;
+}
+
+/* 3rd */
+/* Hamburger Button - Similar to SpeedDial button */
