@@ -82,7 +82,7 @@
 
 import { configureStore } from "@reduxjs/toolkit";
 import { combineReducers } from "redux";
-import thunk from "redux-thunk";
+import { thunk } from "redux-thunk";
 import {
   newProductReducer,
   newReviewReducer,
