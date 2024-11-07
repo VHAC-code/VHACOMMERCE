@@ -1,5 +1,5 @@
 import { createStore, combineReducers, applyMiddleware } from "redux";
-import { thunk } from "redux-thunk"; // Correct import for redux-thunk
+import thunk from "redux-thunk"; // Correct import for redux-thunk
 import { composeWithDevTools } from "redux-devtools-extension";
 import {
   newProductReducer,
@@ -65,7 +65,9 @@ const middleware = [thunk]; // Applying redux-thunk middleware
 const store = createStore(
   reducer,
   initialState,
-  composeWithDevTools(applyMiddleware(...middleware)) // Applying middleware
+  process.env.NODE_ENV === "development"
+    ? composeWithDevTools(applyMiddleware(...middleware))
+    : applyMiddleware(...middleware)
 );
 
 export default store;
