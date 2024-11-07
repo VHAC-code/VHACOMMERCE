@@ -1,5 +1,5 @@
 const express = require("express");
-
+const cors = require("cors"); // Import CORS //new
 const app = express();
 const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
@@ -8,6 +8,17 @@ const fileUpload = require("express-fileupload");
 const path = require("path");
 
 const errorMiddleware = require("./middleware/error");
+
+//new
+// CORS configuration to allow specific frontend domain
+const corsOptions = {
+  origin: "https://vhacommerce-1.onrender.com", // Your frontend URL (change it if needed)
+  methods: ["GET", "POST", "PUT", "DELETE"], // Allowed methods
+  credentials: true, // Allows cookies and credentials to be sent with requests
+};
+
+app.use(cors(corsOptions)); // Apply CORS middleware to your app
+//new bymmm above
 
 //config
 if (process.env.NODE_ENV !== "PRODUCTION") {
