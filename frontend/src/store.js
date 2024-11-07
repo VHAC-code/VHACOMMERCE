@@ -1,5 +1,5 @@
 import { createStore, combineReducers, applyMiddleware } from "redux";
-import thunk from "redux-thunk"; // Correct import for redux-thunk
+import { thunk } from "redux-thunk"; // Correct import for redux-thunk
 import { composeWithDevTools } from "redux-devtools-extension";
 import {
   newProductReducer,
