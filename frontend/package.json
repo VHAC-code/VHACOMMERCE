@@ -77,5 +77,8 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://192.168.33.135:4000"
+   "proxy": "https://vhaccommerce.onrender.com"
+
 }
+
+
